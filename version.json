@@ -1,9 +1,9 @@
 {
-  "version": "2.37",
-  "releasedAt": "2026-11-17",
+  "version": "2.40",
+  "releasedAt": "2026-04-06",
   "downloadUrl": "https://eggcooky.github.io/seating/seating.html",
   "notes": [
-    "우측 룰렛 패널이 열린 상태에서 [자리 바꾸기] 또는 [번호순 배치] 실행 시 룰렛 대기 화면으로 덮어쓰지 않고 배정 결과와 [가리기: 켜짐] 상태를 그대로 표시하며, 룰렛 원판·배지만 초기 대기 상태로 동기화하도록 수정했습니다.",
-    "배치 조건 모달(#rulesModal) 내부에서 4열~8열 대형 버튼을 클릭해 미리보기 정렬(applyDefaultGridAlignment)을 수행할 때도 [조건 적용] 클릭 전까지 localStorage 자동저장을 보류하도록 통일했습니다."
+    "인쇄 전용 뷰(renderPrintView)를 지연 렌더링(_printViewDirty 플래그 기반)으로 전환하여 평상시 자리 바꾸기·수동 이동·타이핑 중에는 숨겨진 인쇄 DOM을 재생성하지 않고, [A4 가로 출력] 클릭 또는 브라우저 인쇄(beforeprint) 시점에만 즉시 렌더링하도록 최적화했습니다.",
+    "연속 텍스트 입력(input 이벤트) 디바운싱 중 불필요한 인쇄 뷰 호출을 완전히 제거하고 자가 진단 11번 항목에 beforeprint 지연 렌더링 검증을 추가했습니다."
   ]
 }
