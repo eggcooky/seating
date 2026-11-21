@@ -1,9 +1,10 @@
 {
-  "version": "2.76",
-  "date": "2026-11-21",
-  "sha256": "c5ec4ebc2c438edc61b88ca5b1726a6fbb3105ae027954104fa95e1bd92dc8ee",
-  "pkgSha256": "6e6e5032b7e968820a6898be84a48420f15c7314371bb86f417f221cc4fca7bc",
+  "version": "2.77",
+  "date": "2026-11-22",
+  "sha256": "509d7a6d628f70aa83181baf4fa5a26b5b0f17d55e2860b9eaffb3b5da9fdbd3",
+  "pkgSha256": "cd42e70874680459bcb70e0bef90dacd61e701448acd5e2037571f1de85b05ec",
   "knownPkgHashes": {
+    "2.77": "cd42e70874680459bcb70e0bef90dacd61e701448acd5e2037571f1de85b05ec",
     "2.76": "6e6e5032b7e968820a6898be84a48420f15c7314371bb86f417f221cc4fca7bc",
     "2.75": "30073ecede4ad415fcfc626cddea35ae4681a377fe79a76a03dbcb35d5ca3679",
     "2.74": "9539834fe05b4670b23d6ec85cca0da1f443dd2c2d4d449dda2425ab92676b31",
@@ -12,7 +13,7 @@
     "2.71": "d97973feb1ede6fbe98b5e57a4cb48bd0b7e1a12abb3a095e0c56cdf889ac431"
   },
   "notes": [
-    "내장 자가 진단 불변식(추첨 이력 ID) 및 명단 삭제·실행 취소 회귀 검증 보강",
-    "자가 진단 결과 안내 문구를 기능 중심으로 간결하게 정리"
+    "CSP 보안 정책 메타 태그 적용으로 외부 통신을 공식 업데이트 주소 1곳으로 브라우저 차원 제한",
+    "파일 확인 경고 문구를 손상 안내 표현으로 통일하고 배정 결과 없음 방어 가드 추가"
   ]
 }
