@@ -1,9 +1,10 @@
 {
-  "version": "2.75",
+  "version": "2.76",
   "date": "2026-11-21",
-  "sha256": "7b5b5c273147557512d0da60601c87b822f089cf0c64049e9947da66517ad176",
-  "pkgSha256": "30073ecede4ad415fcfc626cddea35ae4681a377fe79a76a03dbcb35d5ca3679",
+  "sha256": "c5ec4ebc2c438edc61b88ca5b1726a6fbb3105ae027954104fa95e1bd92dc8ee",
+  "pkgSha256": "6e6e5032b7e968820a6898be84a48420f15c7314371bb86f417f221cc4fca7bc",
   "knownPkgHashes": {
+    "2.76": "6e6e5032b7e968820a6898be84a48420f15c7314371bb86f417f221cc4fca7bc",
     "2.75": "30073ecede4ad415fcfc626cddea35ae4681a377fe79a76a03dbcb35d5ca3679",
     "2.74": "9539834fe05b4670b23d6ec85cca0da1f443dd2c2d4d449dda2425ab92676b31",
     "2.73": "fec84d7732a25e04fdabca2cbc72532889de5d0c7f1094c21781b47cdc0aec6e",
@@ -11,7 +12,7 @@
     "2.71": "d97973feb1ede6fbe98b5e57a4cb48bd0b7e1a12abb3a095e0c56cdf889ac431"
   },
   "notes": [
-    "순차 공개 중단 시 불필요한 중복·타 탭 재저장을 차단하도록 저장 플래그(persist) 분리",
-    "0명 상태 명단 교체 시 실행 취소 버튼 동기화 보강 및 내부 중복 변수·호출 인자 정리"
+    "내장 자가 진단 불변식(추첨 이력 ID) 및 명단 삭제·실행 취소 회귀 검증 보강",
+    "자가 진단 결과 안내 문구를 기능 중심으로 간결하게 정리"
   ]
 }
