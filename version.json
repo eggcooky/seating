@@ -1,17 +1,17 @@
 {
-  "version": "2.74",
+  "version": "2.75",
   "date": "2026-11-21",
-  "sha256": "a5b5f5b3dddb31aff692a4edc09abd96b534ae5f46a99dc73e836a204704512c",
-  "pkgSha256": "9539834fe05b4670b23d6ec85cca0da1f443dd2c2d4d449dda2425ab92676b31",
+  "sha256": "7b5b5c273147557512d0da60601c87b822f089cf0c64049e9947da66517ad176",
+  "pkgSha256": "30073ecede4ad415fcfc626cddea35ae4681a377fe79a76a03dbcb35d5ca3679",
   "knownPkgHashes": {
+    "2.75": "30073ecede4ad415fcfc626cddea35ae4681a377fe79a76a03dbcb35d5ca3679",
     "2.74": "9539834fe05b4670b23d6ec85cca0da1f443dd2c2d4d449dda2425ab92676b31",
     "2.73": "fec84d7732a25e04fdabca2cbc72532889de5d0c7f1094c21781b47cdc0aec6e",
     "2.72": "fefc797d402157255705e294b12f7aec021d28bf870fa54198c63ede1c93e795",
     "2.71": "d97973feb1ede6fbe98b5e57a4cb48bd0b7e1a12abb3a095e0c56cdf889ac431"
   },
   "notes": [
-    "나이스(NEIS) 3단 학번(학년-반-번호) 자동 번호 추출 파싱 지원 및 실행 취소 상태 정합성 보강",
-    "다중 탭 동기화 타이머 정리·불러오기 세션 정리·순차 공개 저장 최적화 및 중복 렌더링 제거",
-    "로더 오류 출력 안전화(textContent) 및 빌드 시 소스–배포본 최신성 자동 대조 검증 추가"
+    "순차 공개 중단 시 불필요한 중복·타 탭 재저장을 차단하도록 저장 플래그(persist) 분리",
+    "0명 상태 명단 교체 시 실행 취소 버튼 동기화 보강 및 내부 중복 변수·호출 인자 정리"
   ]
 }
