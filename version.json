@@ -1,10 +1,15 @@
 {
-  "version": "2.69",
-  "date": "2026-11-20",
-  "sha256": "f33bd9f9e1bf79d8245a04a5337f02ac80b1266a8c1c094c07d09fdf82b05a18",
+  "version": "2.72",
+  "date": "2026-11-21",
+  "sha256": "00759b2066e01db14ea606fe82b129d1bd9c48b185fb0f49335187c4a6a7cc07",
+  "pkgSha256": "fefc797d402157255705e294b12f7aec021d28bf870fa54198c63ede1c93e795",
+  "knownPkgHashes": {
+    "2.72": "fefc797d402157255705e294b12f7aec021d28bf870fa54198c63ede1c93e795",
+    "2.71": "d97973feb1ede6fbe98b5e57a4cb48bd0b7e1a12abb3a095e0c56cdf889ac431"
+  },
   "notes": [
-    "내장 자가 진단을 18개 항목으로 확장(핵심 회귀·전역 불변식·극단 입력·시드 200스텝 몽키)",
-    "자가 진단 종료 시 예약 타이머·보조 모달 원복 및 실패 상세 줄바꿈 가독성 개선",
-    "빌드 시 DOM ID·오프라인 CSS·버전 동기화·SHA-256 자동 정적 검증 연동"
+    "version.json에 최근 10개 버전 해시 이력(knownPkgHashes) 자동 관리 및 구버전 변조 감지 확대",
+    "파일 무결성 경고 모달 ESC 키 닫기 지원 및 버튼 문구(확인 (업데이트 열기)) 개선",
+    "빌드 시 version-history.json 및 knownPkgHashes 10개 상한 정적 검증 연동"
   ]
 }
