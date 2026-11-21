@@ -38,10 +38,24 @@
       }
     } catch (err) {
       document.body.innerHTML = '';
-      var errBox = document.createElement('div');
-      errBox.style.cssText = 'padding:24px;font-family:sans-serif;color:#e11d48;font-weight:bold;';
-      errBox.textContent = '파일이 손상되었습니다. 최신 버전을 다시 내려받아 실행해 주세요. (' + (err && err.message ? err.message : err) + ')';
-      document.body.appendChild(errBox);
+      var wrap = document.createElement('div');
+      wrap.style.cssText = 'padding:28px;font-family:sans-serif;line-height:1.7;';
+      var msg = document.createElement('div');
+      msg.style.cssText = 'color:#e11d48;font-weight:bold;font-size:15px;margin-bottom:10px;';
+      msg.textContent = '파일이 손상되었습니다. 아래 링크에서 최신 버전을 다시 내려받아 실행해 주세요.';
+      var link = document.createElement('a');
+      link.href = 'https://eggcooky.github.io/seating/seating.html';
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.style.cssText = 'color:#2563eb;text-decoration:underline;font-weight:bold;font-size:14px;';
+      link.textContent = '최신 버전 다시 내려받기 (https://eggcooky.github.io/seating/seating.html)';
+      var detail = document.createElement('div');
+      detail.style.cssText = 'margin-top:12px;color:#64748b;font-size:12px;';
+      detail.textContent = '오류 상세: ' + (err && err.message ? err.message : err);
+      wrap.appendChild(msg);
+      wrap.appendChild(link);
+      wrap.appendChild(detail);
+      document.body.appendChild(wrap);
     }
   })();
   </script>

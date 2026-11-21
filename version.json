@@ -1,7 +1,7 @@
 {
   "version": "2.77",
   "date": "2026-11-22",
-  "sha256": "509d7a6d628f70aa83181baf4fa5a26b5b0f17d55e2860b9eaffb3b5da9fdbd3",
+  "sha256": "4d7b4574eff82853bca6485861dd4323857d9a671aa4cc611be3572398f3b0b1",
   "pkgSha256": "cd42e70874680459bcb70e0bef90dacd61e701448acd5e2037571f1de85b05ec",
   "knownPkgHashes": {
     "2.77": "cd42e70874680459bcb70e0bef90dacd61e701448acd5e2037571f1de85b05ec",
