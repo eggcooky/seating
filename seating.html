@@ -42,18 +42,53 @@
       wrap.style.cssText = 'padding:28px;font-family:sans-serif;line-height:1.7;';
       var msg = document.createElement('div');
       msg.style.cssText = 'color:#e11d48;font-weight:bold;font-size:15px;margin-bottom:10px;';
-      msg.textContent = '파일이 손상되었습니다. 아래 링크에서 최신 버전을 다시 내려받아 실행해 주세요.';
+      msg.textContent = '파일이 손상되었습니다. 아래 링크를 눌러 최신 버전을 다시 내려받아 실행해 주세요.';
       var link = document.createElement('a');
-      link.href = 'https://eggcooky.github.io/seating/seating.html';
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.style.cssText = 'color:#2563eb;text-decoration:underline;font-weight:bold;font-size:14px;';
-      link.textContent = '최신 버전 다시 내려받기 (https://eggcooky.github.io/seating/seating.html)';
+      link.href = '#';
+      link.style.cssText = 'color:#2563eb;text-decoration:underline;font-weight:bold;font-size:14px;cursor:pointer;';
+      link.textContent = '최신 버전 다시 내려받기 (클릭)';
+      var status = document.createElement('div');
+      status.style.cssText = 'margin-top:8px;color:#475569;font-size:13px;font-weight:bold;';
+      var busy = false;
+      link.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        if (busy) return;
+        busy = true;
+        status.style.color = '#475569';
+        status.textContent = '최신 버전을 내려받는 중입니다...';
+        fetch('https://eggcooky.github.io/seating/seating.html?t=' + Date.now(), { cache: 'no-store' })
+          .then(function (res) {
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            return res.text();
+          })
+          .then(function (htmlText) {
+            if (!htmlText || htmlText.length < 50000) throw new Error('Invalid file');
+            var blob = new Blob([htmlText], { type: 'text/html;charset=utf-8' });
+            var blobUrl = URL.createObjectURL(blob);
+            var dl = document.createElement('a');
+            dl.href = blobUrl;
+            dl.download = '자리바꾸기(최신).html';
+            document.body.appendChild(dl);
+            dl.click();
+            document.body.removeChild(dl);
+            setTimeout(function () { URL.revokeObjectURL(blobUrl); }, 1500);
+            status.style.color = '#059669';
+            status.textContent = '다운로드 완료! 내려받은 파일(자리바꾸기(최신).html)을 열어 실행해 주세요.';
+          })
+          .catch(function () {
+            status.style.color = '#e11d48';
+            status.textContent = '오프라인 상태이거나 내려받기에 실패했습니다. 인터넷 연결 후 다시 클릭해 주세요.';
+          })
+          .finally(function () {
+            busy = false;
+          });
+      });
       var detail = document.createElement('div');
       detail.style.cssText = 'margin-top:12px;color:#64748b;font-size:12px;';
       detail.textContent = '오류 상세: ' + (err && err.message ? err.message : err);
       wrap.appendChild(msg);
       wrap.appendChild(link);
+      wrap.appendChild(status);
       wrap.appendChild(detail);
       document.body.appendChild(wrap);
     }
