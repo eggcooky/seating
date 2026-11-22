@@ -1,19 +1,22 @@
 {
-  "version": "2.77",
+  "version": "2.87",
   "date": "2026-11-22",
-  "sha256": "f0f7a2c57ca3aeaede8e4da0a47aeb8499579ebddd44fc4712218ee7bc6f19b9",
-  "pkgSha256": "cd42e70874680459bcb70e0bef90dacd61e701448acd5e2037571f1de85b05ec",
+  "sha256": "b9e4485aace51c45e0e8956f9f0637f1936fb814fce7f1a330763d19f361241a",
+  "pkgSha256": "57fbbb6f04d21d7b2da8285cc577f326f8ca26e9f082a791031e5c14ab27bfb1",
   "knownPkgHashes": {
-    "2.77": "cd42e70874680459bcb70e0bef90dacd61e701448acd5e2037571f1de85b05ec",
-    "2.76": "6e6e5032b7e968820a6898be84a48420f15c7314371bb86f417f221cc4fca7bc",
-    "2.75": "30073ecede4ad415fcfc626cddea35ae4681a377fe79a76a03dbcb35d5ca3679",
-    "2.74": "9539834fe05b4670b23d6ec85cca0da1f443dd2c2d4d449dda2425ab92676b31",
-    "2.73": "fec84d7732a25e04fdabca2cbc72532889de5d0c7f1094c21781b47cdc0aec6e",
-    "2.72": "fefc797d402157255705e294b12f7aec021d28bf870fa54198c63ede1c93e795",
-    "2.71": "d97973feb1ede6fbe98b5e57a4cb48bd0b7e1a12abb3a095e0c56cdf889ac431"
+    "2.87": "57fbbb6f04d21d7b2da8285cc577f326f8ca26e9f082a791031e5c14ab27bfb1",
+    "2.86": "97c36fde4d977301b121051db0d613a472b71a0306838968149f1fb185c88b53",
+    "2.85": "dc4b7910bd46a0319138a520b335d5e67f326c2c320d094f3c65408c01ffc546",
+    "2.84": "b215462f35530b8eaad3aa0e93504e764c9bb63c093ac653ede84f8304d839bf",
+    "2.83": "3fa30bd576e606e192a7940b16c4249afc3e02ee4d1dae796fb7f621d79c278e",
+    "2.82": "49554ea8580aefdd1d77be2e6c574dd11feecf24d1271b5847622a3a2bddbe6f",
+    "2.81": "9aabbd57eedcdeb03f50c0ba9135723f0b60ffc9238458a8d253ffeef038dc37",
+    "2.80": "ddd2eae8bfe38e8feeeed1c77d33d1bee2c2e6b0bddda247a864440a8757624f",
+    "2.79": "d850aff8f94b16c260268b85f869382967dc453b23c99709a7a878ac790ed160",
+    "2.78": "5481b2f2b57585b5e47ccbf86509d0510e98fa9fbea78a8fe94c0a8afd48fdf5"
   },
   "notes": [
-    "CSP 보안 정책 메타 태그 적용으로 외부 통신을 공식 업데이트 주소 1곳으로 브라우저 차원 제한",
-    "파일 확인 경고 문구를 손상 안내 표현으로 통일하고 배정 결과 없음 방어 가드 추가"
+    "내장 자가진단(11·17번)에 6번 샌드박스 락 유지·손상 묶음 차단·Undo 가리기 보존·인쇄 헤더 검증 추가",
+    "전 항목 18종 자가진단 및 16종 도메인 단위 테스트 회귀 안전망 강화"
   ]
 }
