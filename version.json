@@ -1,9 +1,11 @@
 {
-  "version": "2.88",
+  "version": "2.90",
   "date": "2026-11-23",
-  "sha256": "da85a4b855f0b86495d838891dbb8aa22e7b13b7556e94c1be92a6d87d0a136b",
-  "pkgSha256": "1448c4c981ad653daf4551068f782037709bcd4aace0b8d2d711c956eb698ee8",
+  "sha256": "5c8f51cb330cf95d44eb4247c349fb8a2d11478559d3366690955de6cc2a8f3c",
+  "pkgSha256": "9e3dc7cd6a482d4426336f0d99f4c3b8ecfe7cc6e8d10bc50e72770d6e0517ec",
   "knownPkgHashes": {
+    "2.90": "9e3dc7cd6a482d4426336f0d99f4c3b8ecfe7cc6e8d10bc50e72770d6e0517ec",
+    "2.89": "1cc4b91b67f9a2fb4aa8ba9b8abcfc36d23805c45f7c57436d2f1d84b2e8191b",
     "2.88": "1448c4c981ad653daf4551068f782037709bcd4aace0b8d2d711c956eb698ee8",
     "2.87": "57fbbb6f04d21d7b2da8285cc577f326f8ca26e9f082a791031e5c14ab27bfb1",
     "2.86": "97c36fde4d977301b121051db0d613a472b71a0306838968149f1fb185c88b53",
@@ -11,12 +13,10 @@
     "2.84": "b215462f35530b8eaad3aa0e93504e764c9bb63c093ac653ede84f8304d839bf",
     "2.83": "3fa30bd576e606e192a7940b16c4249afc3e02ee4d1dae796fb7f621d79c278e",
     "2.82": "49554ea8580aefdd1d77be2e6c574dd11feecf24d1271b5847622a3a2bddbe6f",
-    "2.81": "9aabbd57eedcdeb03f50c0ba9135723f0b60ffc9238458a8d253ffeef038dc37",
-    "2.80": "ddd2eae8bfe38e8feeeed1c77d33d1bee2c2e6b0bddda247a864440a8757624f",
-    "2.79": "d850aff8f94b16c260268b85f869382967dc453b23c99709a7a878ac790ed160"
+    "2.81": "9aabbd57eedcdeb03f50c0ba9135723f0b60ffc9238458a8d253ffeef038dc37"
   },
   "notes": [
-    "오프라인 CSS 캐스케이드(2열 그리드·테두리 링/그림자 합성·버튼 그림자) 및 출력 모달 부제목 대비 개선",
-    "룰렛 세션 상태 초기화 보강, 저장소 로더 정리 및 빌드·자가진단(9·16번) 회귀 검증 추가"
+    "최초 실행 자동 안내 및 상단 [? 도움말] 모달 추가 (6단계 요약 · 팁 3종 · SVG 컷아웃 스포트라이트 연동)",
+    "도움말 항목 호버 시 배경 메뉴 강조, 좁은 화면 자동 숨김 및 접근성·자가진단(16·17번) 검증 보강"
   ]
 }
